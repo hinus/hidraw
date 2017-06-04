@@ -1,6 +1,7 @@
 package cn.hinus.hidraw;
 
 import cn.hinus.hidraw.shape.Circle;
+import cn.hinus.hidraw.shape.HiText;
 import cn.hinus.hidraw.shape.Rect;
 import cn.hinus.hidraw.util.PaintTool;
 import javafx.scene.paint.Color;
@@ -51,6 +52,9 @@ public class Controller {
         }
         else if (globalPaintType == PaintTool.PaintType.SELECT) {
             m.markSelected(x, y);
+        }
+        else if (globalPaintType == PaintTool.PaintType.TEXT) {
+            m.getShapes().add(HiText.makeText("hello", x, y, "Arial", 28));
         }
         v.updateModel(m);
     }

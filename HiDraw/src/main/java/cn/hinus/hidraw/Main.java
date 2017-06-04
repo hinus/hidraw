@@ -100,6 +100,7 @@ public class Main extends Application{
         canvas.setOnDragDetected(new CanvasDragDetected());
         canvas.setOnMouseDragged(new CanvasMouseDrag());
         canvas.setOnMouseReleased(new CanvasMouseRelease());
+
         //canvas.setOnDragExited(new CanvasDragDone());
         //canvas.setOnMouseDragReleased(new CanvasMouseDrag());
     }

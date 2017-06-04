@@ -22,6 +22,9 @@ public class PaintToolAction implements EventHandler<KeyEvent> {
             case C:
                 Controller.getInstance().setPaintType(PaintTool.PaintType.CIRCLE);
                 break;
+            case T:
+                Controller.getInstance().setPaintType(PaintTool.PaintType.TEXT);
+                break;
             default:
                 break;
         }

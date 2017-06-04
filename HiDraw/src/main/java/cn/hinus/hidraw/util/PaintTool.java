@@ -9,5 +9,6 @@ public class PaintTool {
         CIRCLE,
         SELECT,
         ARROW,
+        TEXT,
     }
 }
